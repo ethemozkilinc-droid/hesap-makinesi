@@ -16,7 +16,7 @@ body::before {
   background:
     linear-gradient(90deg, rgba(7, 23, 28, .78), rgba(9, 27, 31, .48)),
     linear-gradient(0deg, rgba(5, 20, 25, .75), transparent 45%),
-    url('assets/dicle-nehri.jpg') center 58% / cover no-repeat;
+    url('dicle-nehri.jpg') center 58% / cover no-repeat;
 }
 .workspace { padding-bottom: 135px; }
 .calculator, .history-panel {
