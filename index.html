@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#151b29">
+  <meta name="description" content="Klavye destekli, modern ve kullanımı kolay hesap makinesi.">
+  <title>Hesap — Günlük hesapların için</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="workspace">
+    <header class="page-header"><a class="brand" href="index.html"><span class="brand-icon">=</span> hesap<span class="brand-dot">.</span></a><span class="badge"><i></i> Günlük hesapların için</span></header>
+    <div class="intro"><span class="eyebrow">AZ TUŞ, ÇOK İŞ.</span><h1>Hesaplar netleşsin.</h1><p>Küçük işlemlerden büyük fikirlere, bir hesap uzağında.</p></div>
+    <div class="app-grid">
+      <section class="calculator" aria-label="Hesap makinesi">
+        <div class="calculator-top"><span><i class="status-dot"></i> STANDART</span><span class="mode-label">+ − × ÷</span></div>
+        <div class="display"><div id="expression" class="expression" aria-label="İşlem">&nbsp;</div><output id="result" aria-live="polite" aria-atomic="true">0</output><span id="message" class="message" role="status">Hadi, bir hesap yapalım.</span></div>
+        <div class="keys">
+          <button class="utility" data-action="clear" title="Tümünü temizle (Esc)">AC</button><button class="utility" data-action="sign" aria-label="İşareti değiştir">+/−</button><button class="utility" data-action="percent" aria-label="Yüzde">%</button><button class="operator" data-operator="/" aria-label="Böl">÷</button>
+          <button data-digit="7">7</button><button data-digit="8">8</button><button data-digit="9">9</button><button class="operator" data-operator="*" aria-label="Çarp">×</button>
+          <button data-digit="4">4</button><button data-digit="5">5</button><button data-digit="6">6</button><button class="operator" data-operator="-" aria-label="Çıkar">−</button>
+          <button data-digit="1">1</button><button data-digit="2">2</button><button data-digit="3">3</button><button class="operator" data-operator="+" aria-label="Topla">+</button>
+          <button data-action="delete" aria-label="Son basamağı sil" title="Son basamağı sil (Backspace)">⌫</button><button data-digit="0">0</button><button data-action="decimal" aria-label="Ondalık virgül">,</button><button class="equals" data-action="equals" aria-label="Sonucu hesapla">=</button>
+        </div>
+        <div class="calculator-bottom"><span>Biraz daha kolay, biraz daha hızlı.</span><span>↵</span></div>
+      </section>
+      <aside class="history-panel"><div class="history-header"><h2>İşlem geçmişi</h2><button id="clear-history" class="text-button" title="İşlem geçmişini temizle">Temizle</button></div><p class="history-caption">Son hesapların burada, elinin altında.</p><div id="history" class="history-list"></div><div class="history-note"><span>↗</span> Bir sonucu tekrar kullanmak için üzerine tıkla.</div></aside>
+    </div>
+    <footer><span class="keyboard-icon">⌨</span><span><strong>Klavyen de hazır.</strong> Sayılar ve + − * / ile işlem yap.<br class="mobile-break"> <kbd>Enter</kbd> hesapla <span class="separator">·</span> <kbd>Esc</kbd> temizle</span></footer>
+  </main>
+</body>
+</html>
