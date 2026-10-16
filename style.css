@@ -1,3 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Allura&display=swap');
 
 :root{font-family:'DM Sans',sans-serif;color:#e9edf5;background:#101521;font-synthesis:none;color-scheme:dark}*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(ellipse at 34% 48%,#1c293a75,transparent 60%)}button,a{-webkit-tap-highlight-color:transparent}button{font:inherit;cursor:pointer}button:focus-visible,a:focus-visible{outline:2px solid #8ee3c0;outline-offset:4px}.workspace{max-width:1050px;margin:auto;padding:38px 40px 28px}.page-header{display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;text-decoration:none;color:#f6f8fc;font:800 27px Manrope,sans-serif;letter-spacing:-1px}.brand-icon{background:#a5ebce;color:#152d29;width:31px;height:31px;border-radius:9px;display:grid;place-items:center;margin-right:10px;font-size:27px}.brand-dot{color:#a5ebce}.badge{font-size:12px;color:#a2aaba;display:flex;align-items:center;gap:8px}.badge i,.status-dot{display:inline-block;width:6px;height:6px;background:#a5ebce;border-radius:50%}.intro{margin:67px 0 32px}.eyebrow{font-size:10px;font-weight:700;letter-spacing:2.5px;color:#a5ebce}h1{font:700 clamp(29px,4vw,39px) Manrope,sans-serif;letter-spacing:-1.6px;margin:13px 0 11px}.intro p{font-size:14px;color:#8f9aac;margin:0}.app-grid{display:grid;grid-template-columns:420px 1fr;gap:24px;align-items:stretch}.calculator{background:#1b2332;border:1px solid #30394a;border-radius:24px;padding:24px;box-shadow:0 24px 65px #0003}.calculator-top{display:flex;justify-content:space-between;align-items:center;font-size:10px;letter-spacing:1.7px;color:#a1acbf}.status-dot{width:5px;height:5px;margin-right:7px}.mode-label{letter-spacing:5px;color:#647186}.display{height:156px;display:flex;flex-direction:column;align-items:flex-end;justify-content:center;overflow:hidden}.expression{font-size:15px;color:#8f9caf;min-height:22px;max-width:100%;overflow-wrap:anywhere}output{font:500 clamp(29px,5vw,48px) Manrope,sans-serif;letter-spacing:-1.5px;line-height:1.5;max-width:100%;overflow-wrap:anywhere}.message{color:#738095;font-size:11px;min-height:17px}.keys{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.keys button{height:62px;border:1px solid #ffffff04;border-radius:13px;background:#293346;color:#ecf0f8;font-size:22px;font-weight:500;transition:background .15s,transform .15s}.keys button:hover{background:#38455c;transform:translateY(-2px)}.keys button:active,.keys button.pressed{transform:scale(.95);background:#44526a}.keys .utility{background:#344050;font-size:17px;color:#c0cbd9}.keys .operator{background:#29403f;color:#a5ebce;font-size:25px}.keys .operator.selected{box-shadow:inset 0 0 0 1px #a5ebce}.keys .equals{background:#a5ebce;color:#153c31;font-size:28px}.keys .equals:hover{background:#c2f7df}.calculator-bottom{display:flex;justify-content:space-between;align-items:center;color:#6e7c91;font-size:10px;padding-top:18px}.calculator-bottom>span:last-child{font-size:16px}.history-panel{border:1px solid #283243;border-radius:24px;padding:25px 24px;display:flex;flex-direction:column;background:#151d2a80}.history-header{display:flex;justify-content:space-between;align-items:center;gap:12px}h2{font-size:15px;font-weight:500;margin:0}.text-button{border:0;background:none;color:#8290a6;font-size:11px;padding:5px}.text-button:hover{color:#a5ebce}.history-caption{font-size:11px;color:#748196;margin:10px 0 20px}.history-list{flex:1;max-height:390px;overflow-y:auto;scrollbar-width:thin}.empty-history{min-height:290px;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;color:#748196;font-size:12px;line-height:1.8}.empty-icon{display:grid;place-items:center;width:49px;height:49px;border:1px solid #303c4e;border-radius:15px;font-size:26px;color:#97a8bb;margin-bottom:14px}.empty-history strong{font-weight:500;color:#a9b4c5}.history-item{width:100%;display:flex;flex-direction:column;align-items:flex-end;gap:7px;padding:15px 12px;margin-bottom:8px;border:1px solid #2a3646;border-radius:12px;background:#1d2735;color:#eef4f7;overflow-wrap:anywhere;text-align:right}.history-item:hover{background:#263748}.history-item span{font-size:12px;color:#8d9caf}.history-item strong{font:500 23px Manrope,sans-serif;color:#b1e8d1}.history-note{border-top:1px solid #293345;padding-top:17px;margin-top:18px;font-size:10px;color:#748196;line-height:1.7}.history-note>span{color:#a5ebce;margin-right:5px}footer{display:flex;align-items:center;gap:13px;font-size:11px;line-height:2;color:#758197;margin-top:25px}footer strong{font-weight:400;color:#a6b0c1}.keyboard-icon{font-size:23px;color:#8a97ab}kbd{font:10px 'DM Sans',sans-serif;border:1px solid #354052;border-radius:4px;padding:2px 5px;color:#a6b0c1;margin:0 3px}.separator{margin:0 5px}.mobile-break{display:none}@media(min-width:1100px){.workspace{padding-top:45px}}@media(max-width:760px){.workspace{padding:25px 20px}.intro{margin-top:42px}.app-grid{grid-template-columns:minmax(0,1fr);max-width:440px;margin:auto}.history-panel{min-height:220px}.empty-history{min-height:130px}.history-list{max-height:250px}.badge{font-size:10px}.calculator{padding:20px}.keys button{height:61px}footer{max-width:440px;margin:22px auto}.mobile-break{display:block}.intro p{font-size:12px}.intro{text-align:center}}@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* Dicle Nehri teması: hesaplama davranışını değiştirmeyen görsel katman. */
+body {
+  background: #152c30;
+  isolation: isolate;
+}
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(7, 23, 28, .78), rgba(9, 27, 31, .48)),
+    linear-gradient(0deg, rgba(5, 20, 25, .75), transparent 45%),
+    url('assets/dicle-nehri.jpg') center 58% / cover no-repeat;
+}
+.workspace { padding-bottom: 135px; }
+.calculator, .history-panel {
+  border-color: rgba(197, 230, 218, .2);
+  background: rgba(18, 35, 42, .83);
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 24px 65px rgba(0, 15, 20, .3);
+}
+.history-panel { background: rgba(17, 33, 40, .77); }
+.intro p, .badge { color: #c2d1d1; }
+.history-caption, .history-note, .message, .calculator-bottom, footer { color: #a6bbbb; }
+.river-signature {
+  position: fixed;
+  right: clamp(22px, 4vw, 65px);
+  bottom: 22px;
+  text-align: right;
+  max-width: calc(100vw - 40px);
+  z-index: 2;
+}
+.river-signature-text {
+  display: block;
+  font-family: 'Allura', 'Segoe Script', 'Brush Script MT', cursive;
+  font-size: clamp(40px, 5vw, 67px);
+  font-weight: 400;
+  line-height: 1.3;
+  color: #f1e4bf;
+  text-shadow: 0 2px 16px #061c22, 0 2px 4px #061c22;
+}
+.photo-credit {
+  display: block;
+  max-width: 330px;
+  margin-left: auto;
+  font-size: 9px;
+  line-height: 1.7;
+  color: #d0dcda;
+  text-shadow: 0 1px 5px #061c22;
+}
+.photo-credit a { color: inherit; text-underline-offset: 3px; }
+@media (max-width: 760px) {
+  .workspace { padding-bottom: 24px; }
+  .river-signature { position: relative; right: auto; bottom: auto; margin: 0 22px 24px auto; }
+  body::before { background-position: center, center, 58% center; }
+}
